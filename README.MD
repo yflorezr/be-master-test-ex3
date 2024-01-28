@@ -12,8 +12,7 @@ Prueba Backend Node - Yohan Florez - yflorezr@gmail.com
 Install my-project with npm
 
 ```bash
-  cd be-master-test
+  cd be-master-test-ex3
 
-  npm i
   node index.js
 ```

@@ -1,18 +1,15 @@
-const axios = require('axios')
-
-async function getReposByUser(username, limit = 10) {
-  try {
-    const apiUrl = `https://api.github.com/users/${username}/repos?sort=stars&per_page=${limit}`
-    const response = await axios.get(apiUrl)
-    const popularRepos = response.data
-
-    console.log(`Primeros ${limit} repositorios para el usuario ${username}:`)
-    popularRepos.forEach((repo, index) => {
-      console.log(`${index + 1}. ${repo.name}`)
-    })
-  } catch (error) {
-    console.error('Ocurrio un error:', error.message)
+function oddIntegersArray(n) {
+  if (typeof n !== 'number' || n <= 0 || !Number.isInteger(n)) {
+      throw new Error('Input must be a positive integer');
   }
+
+  const resultArray = [];
+  for (let i = 1; i <= n; i += 2) {
+      resultArray.push(i);
+  }
+
+  return resultArray;
 }
 
-getReposByUser('google')
+const inputNumber = 16;
+console.log(oddIntegersArray(inputNumber));
