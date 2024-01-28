@@ -1,7 +1,7 @@
 
 # BeMaster - GitHub Consume
 
-Prueba Fullstack Node - Yohan Florez - yflorezr@gmail.com
+Prueba Backend Node - Yohan Florez - yflorezr@gmail.com
 
 ## Authors
 
@@ -12,7 +12,7 @@ Prueba Fullstack Node - Yohan Florez - yflorezr@gmail.com
 Install my-project with npm
 
 ```bash
-  cd be-master-fullstack-test
+  cd be-master-test
 
   npm i
   node index.js
